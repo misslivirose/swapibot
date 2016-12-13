@@ -188,7 +188,7 @@ var formatAndEndStarships = function FormatResponseAndEndSession(mySession, myRe
  * Query search results and create a hero card, then send the response
  */
 var getBingSearchResult = function GetSearch(characterName, session, subtitleString) {
-    var key = process.env.key.BING_KEY; 
+    var key = process.env.BING_KEY; 
     var options = {
         url: 'https://api.cognitive.microsoft.com/bing/v5.0/images/search?count=1&q=' + encodeURIComponent(characterName),
         headers: {
